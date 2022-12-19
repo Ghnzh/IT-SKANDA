@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { Navbar } from "../../components/navbar";
-import Footer from "../../components/footer";
+import Footer from "../../components/Footer";
 import CardProduct from "../../components/CardProduct";
 import axios from "axios";
 

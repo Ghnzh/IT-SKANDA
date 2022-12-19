@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Head from "next/head";
 import { Navbar } from "../components/navbar";
-import Footer from "../components/footer";
+import Footer from "../components/Footer";
 
 export default function Contact() {
   return (
