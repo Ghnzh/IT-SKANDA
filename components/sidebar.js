@@ -2,15 +2,15 @@ import Link from "next/link";
 
 export default function Sidebar() {
   return (
-    <aside class="fixed top-0 left-0 w-64 p-4 overflow-hidden h-full" aria-label="Sidenav">
-      <div class="py-5 px-3 text-white bg-ijo rounded-lg">
-        <ul class="space-y-2 mx-2">
+    <aside className="fixed top-0 left-0 w-64 p-4 overflow-hidden h-full" aria-label="Sidenav">
+      <div className="py-5 px-3 text-white bg-ijo rounded-lg">
+        <ul className="space-y-2 mx-2">
           <li>
             <Link href="/dashboard">
-              <a class="flex items-center p-2 text-base font-normal rounded-lg text-white hover:bg-black  group">
+              <a className="flex items-center p-2 text-base font-normal rounded-lg text-white hover:bg-black  group">
                 <svg
                   aria-hidden="true"
-                  class="w-6 h-6 text-gray-400 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                  className="w-6 h-6 text-gray-400 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -18,16 +18,16 @@ export default function Sidebar() {
                   <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path>
                   <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
                 </svg>
-                <span class="ml-3">Overview</span>
+                <span className="ml-3">Overview</span>
               </a>
             </Link>
           </li>
           <li>
             <Link href="/dashboard/guru">
-              <button type="button" class="flex items-center p-2 w-full text-base font-normal rounded-lg transition duration-75 group hover:bg-black text-white " aria-controls="dropdown-pages" data-collapse-toggle="dropdown-pages">
+              <button type="button" className="flex items-center p-2 w-full text-base font-normal rounded-lg transition duration-75 group hover:bg-black text-white " aria-controls="dropdown-pages" data-collapse-toggle="dropdown-pages">
                 <svg
                   aria-hidden="true"
-                  class="flex-shrink-0 w-6 h-6 text-gray-400 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+                  className="flex-shrink-0 w-6 h-6 text-gray-400 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -38,16 +38,16 @@ export default function Sidebar() {
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-                <span class="flex-1 ml-3 text-left whitespace-nowrap">Guru</span>
+                <span className="flex-1 ml-3 text-left whitespace-nowrap">Guru</span>
               </button>
             </Link>
           </li>
           <li>
             <Link href="/dashboard/products">
-              <button type="button" class="flex items-center p-2 w-full text-base font-normal rounded-lg transition duration-75 group hover:bg-black text-white " aria-controls="dropdown-sales" data-collapse-toggle="dropdown-sales">
+              <button type="button" className="flex items-center p-2 w-full text-base font-normal rounded-lg transition duration-75 group hover:bg-black text-white " aria-controls="dropdown-sales" data-collapse-toggle="dropdown-sales">
                 <svg
                   aria-hidden="true"
-                  class="flex-shrink-0 w-6 h-6 text-gray-400 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+                  className="flex-shrink-0 w-6 h-6 text-gray-400 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -58,16 +58,16 @@ export default function Sidebar() {
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-                <span class="flex-1 ml-3 text-left whitespace-nowrap">Products</span>
+                <span className="flex-1 ml-3 text-left whitespace-nowrap">Products</span>
               </button>
             </Link>
           </li>
           <li>
             <Link href="/dashboard/prestasi">
-              <a href="#" class="flex items-center p-2 text-base font-normal rounded-lg text-white hover:bg-black  group">
+              <a href="#" className="flex items-center p-2 text-base font-normal rounded-lg text-white hover:bg-black  group">
                 <svg
                   aria-hidden="true"
-                  class="flex-shrink-0 w-6 h-6 text-gray-400 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                  className="flex-shrink-0 w-6 h-6 text-gray-400 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -75,17 +75,17 @@ export default function Sidebar() {
                   <path d="M8.707 7.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l2-2a1 1 0 00-1.414-1.414L11 7.586V3a1 1 0 10-2 0v4.586l-.293-.293z"></path>
                   <path d="M3 5a2 2 0 012-2h1a1 1 0 010 2H5v7h2l1 2h4l1-2h2V5h-1a1 1 0 110-2h1a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V5z"></path>
                 </svg>
-                <span class="flex-1 ml-3 whitespace-nowrap">Prestasi</span>
-                {/* <span class="inline-flex justify-center items-center w-5 h-5 text-xs font-semibold rounded-full text-primary-800 bg-primary-100 dark:bg-primary-200 dark:text-primary-800">6</span> */}
+                <span className="flex-1 ml-3 whitespace-nowrap">Prestasi</span>
+                {/* <span className="inline-flex justify-center items-center w-5 h-5 text-xs font-semibold rounded-full text-primary-800 bg-primary-100 dark:bg-primary-200 dark:text-primary-800">6</span> */}
               </a>
             </Link>
           </li>
           <li>
             <Link href="/dashboard/blogs">
-              <a href="#" class="flex items-center p-2 text-base font-normal rounded-lg transition duration-75 hover:bg-black  text-white group">
+              <a href="#" className="flex items-center p-2 text-base font-normal rounded-lg transition duration-75 hover:bg-black  text-white group">
                 <svg
                   aria-hidden="true"
-                  class="flex-shrink-0 w-6 h-6 text-gray-400 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                  className="flex-shrink-0 w-6 h-6 text-gray-400 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -97,31 +97,31 @@ export default function Sidebar() {
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-                <span class="ml-3">Blogs</span>
+                <span className="ml-3">Blogs</span>
               </a>
             </Link>
           </li>
         </ul>
-        <ul class="pt-5 mt-5 space-y-2 border-t border-white mx-2">
+        <ul className="pt-5 mt-5 space-y-2 border-t border-white mx-2">
           <li>
-            <a href="#" class="flex items-center p-2 text-base font-normal rounded-lg transition duration-75 hover:bg-black  text-white group">
+            <a href="#" className="flex items-center p-2 text-base font-normal rounded-lg transition duration-75 hover:bg-black  text-white group">
               <svg
                 aria-hidden="true"
-                class="flex-shrink-0 w-6 h-6 text-gray-400 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                className="flex-shrink-0 w-6 h-6 text-gray-400 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z"></path>
               </svg>
-              <span class="ml-3">Components</span>
+              <span className="ml-3">Components</span>
             </a>
           </li>
           <li>
-            <a href="#" class="flex items-center p-2 text-base font-normal rounded-lg transition duration-75 hover:bg-black  text-white group">
+            <a href="#" className="flex items-center p-2 text-base font-normal rounded-lg transition duration-75 hover:bg-black  text-white group">
               <svg
                 aria-hidden="true"
-                class="flex-shrink-0 w-6 h-6 text-gray-400 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                className="flex-shrink-0 w-6 h-6 text-gray-400 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -132,7 +132,7 @@ export default function Sidebar() {
                   clip-rule="evenodd"
                 ></path>
               </svg>
-              <span class="ml-3">Help</span>
+              <span className="ml-3">Help</span>
             </a>
           </li>
         </ul>
