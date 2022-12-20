@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import axios from "axios";
 import CardGuru from "../components/CardGuru";
 import { Navbar } from "../components/navbar";
@@ -21,7 +20,7 @@ function AboutUs({ guru = [] }) {
           <h1 className="text-[80px] font-semibold">About Us</h1>
         </div>
         <div className="flex flex-col justify-center items-center px-12 -mt-20 mb-20">
-          <Image src={`/blogImages/gurun.jpg`} width={1200} height={400} alt="foto" className="rounded-2xl mx-auto flex" />
+          <div alt="foto" className="bg-auto bg-[url('/Tech-Institute-02.jpg')] rounded-2xl mx-auto flex h-[500px] w-[90%]"></div>
           <div className="flex justify-between text-ijo px-24 py-12">
             <h1 className="font-semibold text-[40px] w-1/2">Profile IT Skanda</h1>
             <p className="w-1/2 text-right">
