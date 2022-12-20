@@ -15,7 +15,7 @@ export default function Home() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="bg-cream min-h-screen text-ijo font-viga flex items-center">
+      <section className="bg-cream bg-[url('/bg-hero.jpg')] bg-cover h-screen text-ijo flex items-center">
         <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
           <a href="#" className="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm bg-gray-100 rounded-full hover:bg-gray-200" role="alert">
             <span className="text-xs bg-ijo rounded-full text-white px-4 py-1.5 mr-3">New</span> <span className="text-sm font-medium">IT SKANDA Website is out! See what's new</span>
